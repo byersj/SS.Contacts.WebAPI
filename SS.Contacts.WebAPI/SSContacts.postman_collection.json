@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "e4c40482-f39b-4db2-a7ff-ccbb647a0152",
+		"name": "SSContacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9801/api/contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "Get 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9801/api/contacts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert 1st Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":{\r\n        \"first\":\"Harold\",\r\n        \"middle\":\"Francis\",\r\n        \"last\":\"Gilkey\"\r\n    },\r\n    \"address\":{\r\n        \"street\":\"8360 High Autumn Row\",\r\n        \"city\":\"Cannon\",\r\n        \"state\":\"Delaware\",\r\n        \"zip\":\"19797\"\r\n    },\r\n    \"phone\":[{\r\n        \"number\":\"302-611-9148\",\r\n        \"type\":\"work\"\r\n        },\r\n        {\r\n        \"number\":\"302-611-9427\",\r\n        \"type\":\"mobile\"\r\n        }\r\n    ],\r\n    \"email\":\"harold.qilkey@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9801/api/contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "Insert 2nd Record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":{\r\n        \"first\":\"Fred\",\r\n        \"middle\":\"Francis\",\r\n        \"last\":\"FlintStone\"\r\n    },\r\n    \"address\":{\r\n        \"street\":\"345 Cave Stone Road\",\r\n        \"city\":\"BedRock\",\r\n        \"state\":\"Virginia\",\r\n        \"zip\":\"23836\"\r\n    },\r\n    \"phone\":[{\r\n        \"number\":\"302-611-1234\",\r\n        \"type\":\"Home\"\r\n        },\r\n        {\r\n        \"number\":\"302-611-4321\",\r\n        \"type\":\"mobile\"\r\n        }\r\n    ],\r\n    \"email\":\"fred.flintston@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9801/api/contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "Update 1st Record",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": {\r\n        \"first\": \"Harold\",\r\n        \"middle\": \"Francis\",\r\n        \"last\": \"Gilkey\"\r\n    },\r\n    \"address\": {\r\n        \"street\": \"8360 High Autumn Row\",\r\n        \"city\": \"Cannon\",\r\n        \"state\": \"Delaware\",\r\n        \"zip\": \"19797\"\r\n    },\r\n    \"phone\": [\r\n        {\r\n            \"number\": \"302-611-9148\",\r\n            \"type\": \"Home\"\r\n        },\r\n        {\r\n            \"number\": \"302-611-9427\",\r\n            \"type\": \"work\"\r\n        }\r\n    ],\r\n    \"email\": \"harold.qilkey@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9801/api/contacts/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete 2nd Record",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:9801/api/contacts/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Call-List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9801/api/contacts/call-list"
+			},
+			"response": []
+		}
+	]
+}

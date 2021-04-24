@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C4v03YYU71vt9zTR90k7qEdiRtFiz2O6upDh8F5glQlGVWBAJ2l3naiTw9VJiVlFpySabM0KOr3GxaN8kLrz6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\byersj\\source\\repos\\SS.Contacts.WebAPI\\SS.Contacts.WebAPI\\SS.Contacts.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\byersj\\.nuget\\packages\\litedb\\5.0.10\\litedb.5.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}
